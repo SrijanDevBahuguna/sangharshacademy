@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniproject</title>
+    <link rel="stylesheet" href="mini.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="mini.html"><img src="images/reallogo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mini -about-us.html">ABOUT US</a></li>
+                    <li><a href="mini-trainings offered.html">TRAININGS LEVELS</a></li>
+                    <li><a href="mini-vision.html">VISION AND SPORTS OFFERED</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>
+    </section>
+
+    <section class ="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Always giving the best results</h1>
+                <p>A sports academy that strives its students to be the best and become professional
+                    sportsperson so that they can be successfull in every walk of life because of the
+                    mental, physical and emotional strengthwe have inculcated in them.
+                </p>
+                <a href="" class="btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/abtu.jpg">
+                <img src="images/bskt.jpg">
+                <img src="images/ftb.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h5>ABOUT US</h5>
+        <p>Our sports academy has a partnership with Delhi Sports which promotes each and every
+            kind of sport and organises tournaments at regular intervals of time.</p>
+        <div class=""icons>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-150px";
+        }
+    </script>
+</body>
+</html>

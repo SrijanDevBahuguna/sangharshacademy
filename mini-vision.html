@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniproject</title>
+    <link rel="stylesheet" href="mini.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="mini.html"><img src="images/reallogo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mini -about-us.html">ABOUT US</a></li>
+                    <li><a href="mini-trainings offered.html">TRAININGS LEVELS</a></li>
+                    <li><a href="mini-vision.html">VISION AND SPORTS OFFERED</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>VISION AND SPORTS PROGRAMS OFFERED</h1>
+    </section>
+
+    <section class="vision">
+        <div class="row">
+            <div class="vis-left">        
+                <h2>VISION AND SPORTS PROGRAMS</h2>
+                <p>VISION: Our vision is to promote sports in every individual especially the teenagers who are
+                    the building blocks of this country and provide them with best facilities so that there is no
+                    stopping and looking behind.
+                </p>
+                <br>
+                <p>SPORTS PROGRAMS OFFERED: Our academy focuses on giving best training in any kind of sports,
+                be it badminton, football, cricket, basketball etc. you name it. Our sports experts and coaches are
+                retired professionals who have themselves played at national and even international levels. We use 
+                latest technology to train an individual at its full potential and let him to be from a casual sportsperson
+                to a professional player.</p>    
+            </div>
+            <div class="vis-right">
+                <h3>SPORTS TRAINING AND PRICE</h3>
+                <div>
+                    <span>FOOTBALL</span>
+                    <span>1000 p.m.</span>
+                </div>
+                <div>
+                    <span>BASKETBALL</span>
+                    <span>900 p.m.</span>
+                </div>
+                <div>
+                    <span>CRICKET</span>
+                    <span>1500 p.m.</span>
+                </div>
+                <div>
+                    <span>BADMINTON</span>
+                    <span>1000 p.m.</span>
+                </div>
+                <div>
+                    <span>VOLLEYBALL</span>
+                    <span>700 p.m.</span>
+                </div>
+                <div>
+                    <span>BASEBALL</span>
+                    <span>1800 p.m.</span>
+                </div>
+                <div>
+                    <span>ATHLETICS</span>
+                    <span>1500 p.m.</span>
+                </div>
+                <div class="comment-box">
+                    <h2>Leave a comment</h2>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="btn red-btn">COMMENT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <h5>ABOUT US</h5>
+        <p>Our sports academy has a partnership with Delhi Sports which promotes each and every
+            kind of sport and organises tournaments at regular intervals of time.</p>
+        <div class=""icons>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-150px";
+        }
+    </script>
+</body>
+</html>

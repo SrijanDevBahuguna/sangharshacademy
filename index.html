@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniproject</title>
+    <link rel="stylesheet" href="mini.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="mini.html"><img src="images/reallogo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="mini -about-us.html">ABOUT US</a></li>
+                    <li><a href="mini-trainings offered.html">TRAININGS LEVELS</a></li>
+                    <li><a href="mini-vision.html">VISION AND SPORTS OFFERED</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>SANGHARSH SPORTS ACADEMY</h1>
+        <p>A place where anyone can learn any kind of sports</p>
+        <a href="" class="btn">VISIT TO KNOW MORE</a>
+    </div>
+    </section>
+
+
+    <section class="sports">
+        <h1>TRAINING LEVELS WE OFFER</h1>
+        <p>We give training at three levels</p>
+        <div class="row">
+            <div class="fit-col">
+                <h3>BEGINNER</h3>
+                <p>At this level we start with the early stages of the individual by giving him knowledge about the sport
+                    ,it rules and make sure that he is well aware of them till the end of the training. after this we work
+                    on his fitness level and perform regular medical tests to see whether the given training is benificial for
+                    him or not.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="fit-col">
+                <h3>INTERMEDIATE</h3>
+                <p>As the individual has been through the beginner level, he/she goes through this intermediate level where
+                training becomes a little more tough. But because of this, the individual enhances its mental and physical
+                strength and strives to become the best. The individual develops a passion for the game and is in the first stage
+                to become a professional. 
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="fit-col">
+                <h3>ADVANCED</h3>
+                <p>In the advanced stage, the training becomes more harder but the individual is ready for that type of training.
+                    In this stage we send the individuals for various trials that are organised at various levels such as district,
+                    state etc. to see there performance apart from training. 
+                </p>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="campus">
+        <h2>SPORTS ARENA</h2>
+        <p>Our individual sports training grounds</p>
+        <div class="stro">
+            <div class="campus-col">
+                <img src="images/field.jpg">
+                <div class="layer">
+                    <h1>FOOTBALL</h1>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/badminton1.jpg">
+                <div class="layer">
+                    <h1>BADMINTON</h1>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/crick.jpg">
+                <div class="layer">
+                    <h1>CRICKET</h1>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/basketball.jpg">
+                <div class="layer">
+                    <h1>BASKETBALL</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h4>ENROLL NOW</h4>
+        <a href="contact.html" class="btn">CONTACT US</a>
+
+    </section>
+    <section class="footer">
+        <h5>ABOUT US</h5>
+        <p>Our sports academy has a partnership with Delhi Sports which promotes each and every
+            kind of sport and organises tournaments at regular intervals of time.
+        </p>
+        <div class=""icons>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-150px";
+        }
+    </script>
+</body>
+</html>
